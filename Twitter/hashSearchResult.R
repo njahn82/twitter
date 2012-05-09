@@ -36,8 +36,9 @@ hash.search.result <- function (query) {
         from_user <- my.json$results[[i]]$from_user
         text <- my.json$results[[i]]$text
         created <- my.json$results[[i]]$created_at
+        to_user <-  my.json$results[[i]]$to_user_name
         
-        df.tmp <- cbind(id, from_user, text, created)
+        df.tmp <- cbind(id, from_user, text, to_user, created)
         
         my.data <- rbind(my.data, df.tmp)
         
