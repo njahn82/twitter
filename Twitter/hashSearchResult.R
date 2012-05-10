@@ -43,8 +43,6 @@ hash.search.result <- function (query) {
         my.data <- rbind(my.data, df.tmp)
         
       } 
-    
-    #return(my.data)
   }
   return(my.data)
 }
