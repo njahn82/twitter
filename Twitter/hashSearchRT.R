@@ -4,7 +4,7 @@
 #
 #by hashtags.
 #
-#It returns co-occurent expanded urls for each tweet (id) 
+#It returns co-occurent user mentions for each tweet (id) 
 #and user as data.frame for up to 1.500 Tweets.
 #
 #NB: Provision of query without hashtag "#"

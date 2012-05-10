@@ -1,4 +1,4 @@
-#This R function queries the Twitter Search API
+#This R (helper) function queries the Twitter Search API
 #
 #https://dev.twitter.com/docs/api/1/get/search
 #
@@ -41,10 +41,12 @@ hash.search.hash <- function (query) {
           
           hash.tmp <- hashtag[[j]]$text
           hash <- c(hash, hash.tmp)
-          user <- rep(from_user, times=length(hash))
           
-          df.tmp <- cbind(id,from_user, hash)
         }
+        id <- rep(id,times=length(hash))
+        from_user <- rep(from_user,times=length(hash))
+        
+        df.tmp <- cbind(id,from_user, hash)
         
         my.data <- rbind(my.data, df.tmp)
         
