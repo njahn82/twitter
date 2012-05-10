@@ -4,5 +4,6 @@ Mining Twitter for data analysis often requires further data manipulation if loa
 
 See also https://dev.twitter.com/docs/api/1/get/search
 
-***Najko Jahn (najko.jahn at uni-bielefeld.de)***
-***licence: GPLv3***    
+*Najko Jahn (najko.jahn at uni-bielefeld.de)*
+
+*licence: GPLv3*    
